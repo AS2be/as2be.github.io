@@ -45,6 +45,13 @@
 		li {
 			margin-bottom: 5px;
 		}
+
+		/* Nur Listen mit dieser Klasse haben keine Punkte */
+       ul.no-bullets {
+          list-style: none;
+          padding-left: 15px;
+          margin: 8px 0 0 0;
+       }
 	</style>
 	
 </head>
@@ -94,7 +101,7 @@
 
 
 	   
-		<ol>
+		<ul class="no-bullets">
 		    <!-- 1. Generativer KI -->
 		    <li>
 		        <details open>
@@ -285,7 +292,7 @@
 		            </ul>
 		        </details>
 		    </li>
-		</ol>
+		</ul>
       </details>
 
       <details>
