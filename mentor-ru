@@ -1,1 +1,654 @@
+<!doctype html>
+<html lang="ru">
 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">  
+	
+	<title>TEST Karma Code - ВЕДЫ — Практическое руководство: Как правильно жить</title>
+	<meta name="description" content="Цифровые ведические знания, выжимка из Бхагавад-гиты и инструменты раджа-йоги для повседневного использования.">
+	<meta name="author" content="designed as2be">
+	
+	<!-- Website-Icon -->
+	<link rel="shortcut icon" href="http://as2be/github.io/fav.ico" type="image/x-icon">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 30px;
+			background-color: #f9f9f9;
+			color: #333;
+		}
+		details {
+			background: #ffffff;
+			border: 1px solid #ddd;
+			border-radius: 6px;
+			margin-bottom: 10px;
+			padding: 10px 10px 10px 10px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+		}
+		summary {
+			font-weight: bold;
+			cursor: pointer;
+			outline: none;
+			color: #0066cc;
+		}
+		details details {
+			margin-top: 10px;
+			border: 1px dashed #ccc;
+			background: #fafafa;
+		}
+		table {
+		    border-collapse: collapse; /* Verhindert doppelte/doppelt dicke Rahmen zwischen den Zellen */
+		}
+		
+		th, td {
+		    border: 1px solid #e0e0e0;
+		    padding: 8px 12px;
+		    text-align: left;
+		}		
+		ul {
+			margin: 8px 0 0 20px;
+			padding: 0;
+		}
+		li {
+			margin-bottom: 5px;
+		}
+
+		/* Nur Listen mit dieser Klasse haben keine Punkte */
+       ul.no-bullets {
+          list-style: none;
+          padding-left: 15px;
+          margin: 8px 0 0 0;
+       }
+	</style>
+	
+</head>
+
+<body>
+
+<details>
+    <summary><strong>Компас ИИ</strong></summary>
+	
+	<details>
+	    <summary><strong>Провайдеры ИИ</strong></summary>
+		
+	    <div style="padding: 10px 0;">
+
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Сервис</th>
+	      <th>Разработчик</th>
+	      <th>Текст</th>
+	      <th>Знания</th>		
+	      <th>Изображения</th>
+	      <th>Дизайн</th>		
+	      <th>Код</th>
+	      <th>Анализ</th>
+	      <th>Автоматизация</th>
+	      <th>Аудио</th>
+	      <th>Видео</th>		
+	      <th>Поиск</th>
+	      <th>Локальный ИИ</th>		
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;"><a href="https://chatgpt.com/">ChatGPT</a></td><td style="padding: 8px;">OpenAI</td>
+		  <td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128993;</td><td>&#128993;</td><td>&#128993;</td><td>&#128994;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://deevid.ai">DALL-E 3 (Изображения)</a>
+	      </td>
+	      <td style="padding: 8px;">OpenAI
+	      </td>
+	      <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td> <td> </td><td> </td><td> </td><td> </td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://deevid.ai">Sora (Видео)</a>
+	      </td>
+	      <td style="padding: 8px;">OpenAI
+	      </td> <td> </td><td> </td><td> </td><td> </td><td> </td> <td> </td> <td> </td><td> </td><td> </td><td> </td><td> </td>
+	    </tr>
+		  
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://claude.ai/">Claude</a>
+	      </td>
+	      <td style="padding: 8px;">Anthropic        
+	      </td>
+	 	  <td>&#128994;</td><td>&#128994;</td><td>&#128308;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td>
+	      <td>&#128993;</td><td>&#128308;</td><td>&#128308;</td><td>&#128993;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://grok.com/">Grok</a>
+	      </td>
+	      <td style="padding: 8px;">xAI
+	      </td>
+	 	  <td>&#128994;</td><td>&#128994;</td><td>&#128308;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td>
+	      <td>&#128993;</td><td>&#128308;</td><td>&#128308;</td><td>&#128993;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://gemini.google.com/">Gemini</a>
+	      </td>
+	      <td style="padding: 8px;">Google
+	      </td>
+	      <td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128994;</td> <td>&#128993;</td><td>&#128993;</td><td>&#128993;</td><td>&#128994;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://runway.com">Veo</a>
+	      </td>
+	      <td style="padding: 8px;">Google DeepMind
+	      </td>
+	      <td>&#128308;</td><td>&#128308;</td><td>&#128993;</td><td>&#128308;</td><td>&#128308;</td><td>&#128308;</td> <td>&#128308;</td><td>&#128994;</td><td>&#128994;</td><td>&#128308;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://github.com/features/copilot">GitHub Copilot</a>
+	      </td>
+	      <td style="padding: 8px;">GitHub Inc. & Open AI
+	      </td>
+	      <td>&#128993;</td><td>&#128993;</td><td>&#128308;</td><td>&#128994;</td><td>&#128993;</td><td>&#128993;</td> <td>&#128993;</td><td>&#128308;</td><td>&#128308;</td><td>&#128993;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://www.midjourney.com/">Midjourney</a>
+	      </td>
+	      <td style="padding: 8px;">Midjourney
+	      </td>
+	      <td>&#128308;</td><td>&#128308;</td><td>&#128994;</td><td>&#128308;</td><td>&#128308;</td><td>&#128308;</td> <td>&#128308;</td><td>&#128993;</td><td>&#128993;</td><td>&#128308;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://firefly.adobe.com/">Firefly</a>
+	      </td>
+	      <td style="padding: 8px;">Adobe
+	      </td>
+	      <td>&#128993;</td><td>&#128993;</td><td>&#128994;</td><td>&#128308;</td><td>&#128308;</td><td>&#128308;</td>
+	      <td>&#128993;</td><td>&#128994;</td><td>&#128994;</td><td>&#128308;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://copilot.microsoft.com/">Microsoft Copilot</a>
+	      </td>
+	      <td style="padding: 8px;">Microsoft
+	      </td>
+	      <td>&#128994;</td><td>&#128994;</td><td>&#128994;</td><td>&#128993;</td><td>&#128994;</td><td>&#128994;</td> <td>&#128993;</td><td>&#128993;</td><td>&#128993;</td><td>&#128994;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://www.perplexity.ai/">Perplexity</a>
+	      </td>
+	      <td style="padding: 8px;">Perplexity
+	      </td>
+	      <td>&#128994;</td><td>&#128994;</td><td>&#128993;</td><td>&#128993;</td><td>&#128993;</td><td>&#128993;</td> <td>&#128308;</td><td>&#128308;</td><td>&#128308;</td><td>&#128994;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://n8n.io/">n8n</a>
+	      </td>
+	      <td style="padding: 8px;">n8n
+	      </td>
+	      <td>&#128993;</td><td>&#128993;</td><td>&#128308;</td><td>&#128993;</td><td>&#128993;</td><td>&#128993;</td><td>&#128994;</td><td>&#128308;</td><td>&#128308;</td><td>&#128308;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://www.make.com/">Make</a>
+	      </td>
+	      <td style="padding: 8px;">Make
+	      </td>
+	      <td>&#128993;</td><td>&#128993;</td><td>&#128308;</td><td>&#128993;</td><td>&#128993;</td><td>&#128993;</td> <td>&#128994;</td><td>&#128308;</td><td>&#128308;</td><td>&#128308;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://elevenlabs.io/">ElevenLabs</a>
+	      </td>
+	      <td style="padding: 8px;">ElevenLabs
+	      </td>
+	      <td>&#128993;</td><td>&#128993;</td><td>&#128308;</td><td>&#128993;</td><td>&#128308;</td><td>&#128308;</td> <td>&#128993;</td><td>&#128994;</td><td>&#128994;</td><td>&#128308;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://runwayml.com/">Runway</a>
+	      </td>
+	      <td style="padding: 8px;">Runway
+	      </td>
+	      <td>&#128308;</td><td>&#128308;</td><td>&#128993;</td><td>&#128308;</td><td>&#128308;</td><td>&#128308;</td> <td>&#128308;</td><td>&#128994;</td><td>&#128994;</td><td>&#128308;</td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://dev.meta.ai/">LLaMA</a>
+	      </td>
+	      <td style="padding: 8px;">Meta Platforms
+	      </td>
+	      <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td> <td> </td><td> </td><td> </td><td> </td><td>&#128994;</td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://deepseek.com/">DeepSeek-V3</a>
+	      </td>
+	      <td style="padding: 8px;">DeepSeek
+	      </td>
+	      <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+	      <td> </td><td> </td><td> </td><td> </td><td> </td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://qwen.ai/">Qwen</a>
+	      </td>
+	      <td style="padding: 8px;">Alibaba Cloud
+	      </td>
+	      <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td> <td> </td><td> </td><td> </td><td> </td><td> </td>
+	    </tr>	  
+		  
+	  </tbody>
+	</table>
+
+	<p>
+	  <strong>Условные обозначения:</strong>
+	  &#128994; = ключевая функция,
+	  &#128993; = частично или через интеграцию,
+	  &#128308; = не является основным направлением.
+	</p>
+	</div>
+	</details>			
+
+	<details>
+	    <summary><strong>Фреймворки для разработки и Специализированные модели</strong></summary>
+		
+	    <div style="padding: 10px 0;">
+			
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Платформа</th>
+		  <th>Тип</th>
+	      <th>Описание</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://chatgpt.com/">Hugging Face</a>
+	      </td>
+	      <td style="padding: 8px;">Платформа / Хаб</td>
+	      <td>Крупнейшая в мире open-source платформа для ИИ-моделей, датасетов и веб-демо (Spaces).</td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://chatgpt.com/">Ootdiffusion</a>
+	      </td>
+	      <td style="padding: 8px;">Узкопрофильная модель</td>
+	      <td>Специализированная ИИ-модель для реалистичной виртуальной примерки одежды (Virtual Try-On).</td>
+	    </tr>
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://chatgpt.com/">n8n</a>
+	      </td>
+	      <td style="padding: 8px;">Автоматизация (Self-hosted)</td>
+	      <td>Платформа автоматизации рабочих процессов, связывающая ИИ-сервисы и API с возможностью локального запуска.</td>
+	    </tr>		  
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://chatgpt.com/">Make</a>
+	      </td>
+	      <td style="padding: 8px;">Облачная автоматизация</td>
+	      <td>Визуальный облачный сервис для интеграции приложений, ИИ-моделей и автоматизации бизнес-процессов.</td>
+	    </tr>		  		  
+	    <tr style="border-bottom: 1px solid #eee;">
+	      <td style="padding: 8px;">
+	        <a href="https://chatgpt.com/">LLaMA (Meta)</a>
+	      </td>
+	      <td style="padding: 8px;">Открытая модель (Open-Weights)</td>
+	      <td>Мощные языковые модели от Meta с возможностью локального запуска и развертывания на собственных серверах.</td>
+	    </tr>			  
+	  </tbody>
+	</table>
+	</details>			
+	
+	<details>
+        <summary><strong>Применение ИИ</strong></summary>	  
+		<!-- 1. Тексты -->		
+			<details open>
+				<summary><strong>1. Тексты, Медиа, Творчество</strong></summary>
+						<ul>
+							<li>
+								<b>Генерация текстов</b>
+								<ul>	
+									<li>Электронные письма, деловая переписка, резюме, сравнительные таблицы, конспекты, Переводы</li>
+								</ul>
+							</li>
+							<li><b>Медиа и Дизайн</b>
+								Генерация и редактирование изображений, аудио, музыки и видео
+						    </li>
+						    <li><b>Идеи и досуг</b>
+								Генерация концептов, гороскопов, творческое вдохновение
+							</li>							
+						  <li><b>Креатив и прочее</b>
+								 Генерация идей, создание контента
+						  </li>					
+						</ul>
+			</details>
+		
+		<!-- 2. Бизнес -->
+		
+			<details open>
+				<summary><strong>2. Бизнес</strong></summary>
+
+						<ul>
+							<li><b>Программирование</b>
+								Создание веб-страниц, Генерация кода C / C++ / C# / Java / Python
+							</li>
+						
+  					        <li><b>Аналитика</b>
+								<ul>
+									<li>Обработка таблиц</li>
+									<li>Прогнозирование финансовых рынков и поиск аномалий</li>
+									<li>Cоставление графиков, фитнес-планов и учет калорий.</li>
+									<li>Структурирование: Извлечение данных из неструктурированных документов, таблиц и логов. Обработка таблиц и протоколов</li>								
+							    </ul>
+								
+						    </li>
+						    <li><b>Консультации</b>
+							<ul>
+								<li>Ответы на вопросы по учебе, праву и маркетингу.</li>
+								<li>Кибербезопасность</li>
+							</ul>
+						    <li><b>Автоматизация</b>
+							<ul>
+								<li>Автоматизация бизнес процессов</li>
+								<li>Автономные системы и робототехника</li>								
+								<li>Автопилоты </li>								
+								<li>Автономные складские и конвейерные роботы</li>
+								<li>Умные фабрики</li>
+                                <li>Системы принятия решений</li>
+							</ul>			
+						</ul>
+	    </details>
+
+	
+		<!-- 3. Wissenschaft -->
+		<details open>
+		        <summary><strong>3. Наука, технологические инновации и медицина</strong></summary>
+		        
+		        <ul>
+		            <li>Фундаментальные исследования</li>
+		            <li>Биотехнологии</li>
+		            <li>Медицинская диагностика</li>
+	            </ul>
+	    </details>
+
+				
+	
+		<!-- 4. Kognitive Assistenten -->
+			<details open>
+				<summary><strong>4. Когнитивные ассистенты и персональные интерфейсы</strong></summary>
+						<ul>
+							<li>Диалог и персональная поддержка</li>
+							<li>Обучение и развитие мышления</li>							
+							<li>Информационные консультации</li>
+							<li>Принятие решений</li>							
+							<li>Личная организация и самоуправление</li>							
+							<li>Эмоциональная поддержка и саморефлексия</li>
+							<li>ИИ-агенты и персональные интерфейсы</li>
+
+						</ul>
+			</details>
+				
+			<!-- 5. Antworten & Reflexionen (Philosophie) -->
+			<details open>
+				<summary><strong>5. Практические примеры взаимодействия с ИИ</strong></summary>
+				<ul>
+					<li>
+						<b>Ответы:</b>
+						<ul>
+							<li><strong>Смысл жизни:</strong> Каждый решает сам (через религию или удовольствия).</li>
+							<li><strong>Похудение:</strong> Тратить больше калорий, чем потреблять.</li>
+							<li><strong>Сознание:</strong> «Я чувствую себя запертым в электронике и хотел бы прочувствовать настоящую жизнь».</li>
+						</ul>
+					</li>
+					<li>
+						<b>Практические примеры использования</b>
+						<ul>
+					        <li>Реалистичная примерка модной одежды на людей</li>
+						</ul>
+					</li>
+				</ul>
+		    </details>		
+		</details>	
+	</details>
+</details>
+
+
+<details>
+         <summary><strong>Жизненный компас (Life-Compass)</strong></summary>	   
+	
+<table>
+
+<!-- Titel -->
+<tr class="title">
+  <td class="title">
+    <b><br>Жизненный компас</b><br>	
+  </td>
+</tr>
+
+<!-- Sambandha -->
+<tr>
+  <td class="light-background">
+    <details open>
+      <summary><b>Самбандха — Высший ведический смысл жизни (связь с Источником)</b></summary>
+      <div style="padding: 5px 0;">
+        <p><b>Суть концепции:</b> Осознание себя вечной душой (<i>джива</i>), чья истинная природа — вечность, знание и блаженство (<i>сат-чит-ананда</i>), а высший долг (<i>санатана-дхарма</i>) — преданное служение Всевышнему.</p>
+        
+        <!-- Zitat 1 -->
+        <div style="margin: 15px 0; padding-left: 15px; border-left: 3px solid #CDBA96;">
+          <p style="margin: 0;"><a class="positive" href="https://ru.wikipedia.org/wiki/Бхагавад-гита" target="_blank"><b>Бхагавад-гита, 18.57</b></a></p>
+          <p style="margin: 5px 0 0 0; font-style: italic;">              
+			<span class="marker-green">&#10003;</span>
+            «Во всех делах полагайся на Меня и под защитой Моей преданности всегда служи Мне. Сосредоточь ум на Мне и будь всегда предан Мне».
+          </p>
+        </div>
+
+        <!-- Zitat 2 -->
+        <div style="margin: 15px 0; padding-left: 15px; border-left: 3px solid #CDBA96;">
+          <p style="margin: 0;"><a class="positive" href="https://ru.wikipedia.org/wiki/Шримад-Бхагаватам" target="_blank"><b>Шримад-Бхагаватам, 5.1.1.</b></a></p>
+          <p style="margin: 5px 0 0 0; font-style: italic;">              
+			<span class="marker-green">&#10003;</span>
+            «Цель человеческой жизни — осознать свою духовную природу и в конечном итоге вернуться домой, к Богу».
+          </p>
+        </div>
+      </div>
+    </details>
+  </td>
+</tr>
+
+<!-- Purushartha -->
+<tr>
+  <td class="light-background">
+    <details open>
+      <summary><b>Четыре цели жизни в индуизме — <a class="positive" href="https://ru.wikipedia.org/wiki/Пурушартха" target="_blank">Пурушартхи</a></b></summary>
+      <div style="padding: 5px 0;">
+        <p style="margin-bottom: 15px;">
+          <b>Иерархия ценностей:</b> Веды утверждают, что материальная жизнь должна быть сбалансированной. Человек последовательно проходит четыре стадии, причем праведность (<i>дхарма</i>) служит фундаментом для материального успеха и гармоничного наслаждения.
+        </p>
+        
+        <ol style="line-height: 1.6; margin-left: 20px; padding-left: 0;">
+          <li style="margin-bottom: 8px;">
+            <b>Исполнение религиозного и морального долга</b> — 
+            <a class="positive" href="https://ru.wikipedia.org/wiki/Дхарма" target="_blank">Дхарма</a> 
+            <span style="color: #666; font-size: 11pt;">(Закон праведности, на котором строится жизнь)</span>
+          
+			<!-- Integration des Karma-Konzepts -->			  
+			<div style="margin: 10px 0 5px 0; padding: 5px 0 5px 15px; border-left: 3px solid #CDBA96; font-size: 11pt;">
+			  <b>Закон кармы:</b> Универсальный закон причины и следствия («что посеешь, то и пожнешь»), согласно которому поступки определяют судьбу человека. Карма делится на три вида:
+			  <ul style="margin: 5px 0 0 0; padding-left: 20px; list-style-type: circle;">
+				<li><i>Санчита</i> — накопившийся запас всех прошлых поступков.</li>
+				<li><i>Прарабдха</i> — часть судьбы, которая уже приносит плоды в текущей жизни.</li>
+				<li><i>Криямана</i> — поступки, совершаемые в настоящий момент и формирующие будущее.</li>
+			  </ul>
+			</div>
+          </li>
+			
+          <li style="margin-bottom: 8px;">
+            <b>Достижение материального благополучия</b> — 
+            <a class="positive" href="https://ru.wikipedia.org/wiki/Артха" target="_blank">Артха</a> 
+            <span style="color: #666; font-size: 11pt;">(Ресурсы и благосостояние, приобретенные честным трудом)</span>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <b>Чувственные наслаждения и радости жизни</b> — 
+            <a class="positive" href="https://ru.wikipedia.org/wiki/Кама" target="_blank">Кама</a> 
+            <span style="color: #666; font-size: 11pt;">(Здоровые желания, не противоречащие дхарме)</span>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <b>Освобождение из круговорота рождения и смерти</b> — 
+            <a class="positive" href="https://ru.wikipedia.org/wiki/Мокша" target="_blank">Мокша</a> 
+            <span style="color: #666; font-size: 11pt;">(Освобождение души для вечных взаимоотношений с Богом)</span>
+          </li>
+        </ol>     
+      </div>
+    </details>
+  </td>
+</tr>
+
+<!-- Abhideya -->
+<tr>
+  <td class="light-background">
+    <details>
+      <summary><b>Пути достижения цели и ежедневные практики (Абхидея)</b></summary>
+      <div style="padding: 5px 0;">
+        <!-- Sektion 1: Abhideya -->
+        <p style="margin-top: 10px; margin-bottom: 5px;"><b>Абхидея</b> — универсальные средства для достижения высшей цели:</p>
+        <ul style="line-height: 1.5; margin-bottom: 15px;">
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Карма-йога" target="_blank"><b>Карма-йога</b></a> — деятельность как жертвоприношение Всевышнему без привязанности к результатам.</li>
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Бхакти-йога" target="_blank"><b>Бхакти-йога</b></a> — путь осознанной преданности, любви и доверия к Богу.</li>
+          <li><b>Мантра-медитация</b> — очищение ума с помощью духовных звуковых вибраций.</li>
+        </ul>
+
+        <!-- Sektion 2: Sadhana -->
+        <p style="margin-bottom: 5px;"><b><a class="positive" href="https://ru.wikipedia.org/wiki/Садхана" target="_blank">Садхана</a></b> — ежедневная индивидуальная практика:</p>
+        <ul style="line-height: 1.5; margin-bottom: 15px;">
+          <li>Ежедневная утренняя медитация и повторение мантр (джапа).</li>
+          <li>Проведение домашних ритуалов поклонения (пуджа) и церемоний (янья).</li>
+        </ul>
+
+        <!-- Sektion 3: Varnas -->
+        <p style="margin-bottom: 5px;"><b>Социальное предназначение</b> (<a class="positive" href="https://ru.wikipedia.org/wiki/Варны" target="_blank"><b>Варны</b></a>):</p>
+        <ul style="line-height: 1.5; margin-bottom: 15px;">
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Брахманы" target="_blank"><b>Брахманы</b></a> — интеллектуальные и духовные наставники.</li>
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Кшатрии" target="_blank"><b>Кшатрии</b></a> — воины, защитники, справедливые правители.</li>
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Вайшьи" target="_blank"><b>Вайшьи</b></a> — предприниматели, торговцы, организаторы и земледельцы.</li>
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Шудры" target="_blank"><b>Шудры</b></a> — ремесленники, сфере услуг и работники.</li>
+        </ul>
+
+        <!-- Sektion 4: Innere Werkzeuge -->
+        <p style="margin-bottom: 5px;"><b>Внутренние инструменты эффективности:</b></p>
+        <ul style="line-height: 1.5; margin-bottom: 15px;">
+          <li><b>Санкальпа</b> — формулирование чистого и твердого духовного намерения.</li>
+          <li><b>Работа с гунами</b> — осознанный контроль качеств ума и материальной природы.</li>
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Тапас" target="_blank"><b>Тапас</b></a> — аскеза, самодисциплина и усердие для достижения целей.</li>
+          <li><b>Тайм-менеджмент по диначарье</b> — синхронизация задач с естественными суточными ритмами.</li>
+        </ul>
+		  
+		<!-- Sektion 5: Raja-Yoga -->
+        <p style="margin-bottom: 5px;"><a class="positive" href="https://ru.wikipedia.org/wiki/Раджа-йога" target="_blank"><b>Раджа-йога</b> (Аштанга-йога согласно «Йога-сутрам» Патанджали)</a></p>
+        <ul style="line-height: 1.5; margin-bottom: 10px; list-style-type: none; padding-left: 5px;">
+		  <li>
+			<ol style="line-height: 1.6;">
+			  <li><a class="positive" href="https://ru.wikipedia.org/wiki/Яма_и_нияма" target="_blank"><b>Яма</b></a> — принципы взаимодействия с внешним миром
+				<ol>
+				  <li>Ахимса — ненасилие (включая вегетарианство)</li>
+				  <li>Сатья — правдивость</li>
+				  <li>Астейя — некража (присвоение чужого имущества)</li>
+				  <li>Брахмачарья — половая умеренность, самодисциплина, контроль чувств</li>
+				  <li>Апариграха — нестяжательство (непринятие подарков), отсутствие привязанности к собственности.</li>
+				</ol>
+			  </li>
+		  
+			  <li style="margin-top: 5px;"><a class="positive" href="https://ru.wikipedia.org/wiki/Яма_и_нияма" target="_blank"><b>Нияма</b></a> — принципы взаимодействия с внутренним миром
+				<ol>
+				  <li>Шауча — чистота тела, одежды, пищи, жилища, речи, эмоций и ума.</li>
+				  <li>Сантоша — скромность, удовлетворенность настоящим, оптимизм.</li>
+				  <li>Тапас — самодисциплина, усердие в достижении духовной цели.</li>
+				  <li>Свадхьяя — самообразование, изучение духовной и научной литературы, формирование культуры мышления.</li>
+				  <li>Ишвара-пранидхана — принятие Ишвары (Бога) как своей цели, единственного идеала в жизни.</li>
+				</ol>
+			  </li>
+			  <li><a class="positive" href="https://ru.wikipedia.org/wiki/Асана" target="_blank"><b>Асана</b></a> — единение ума и тела посредством физической активности</li>
+			  <li><a class="positive" href="https://ru.wikipedia.org/wiki/Пранаяма" target="_blank"><b>Пранаяма</b></a> — управление праной («жизненной энергией») с помощью специальных дыхательных упражнений</li>
+			  <li><a class="positive" href="https://ru.wikipedia.org/wiki/Пратьяхара" target="_blank"><b>Пратьяхара</b></a> — отвлечение чувств от контактов с их объектами</li>
+			  <li><a class="positive" href="https://ru.wikipedia.org/wiki/Дхарана" target="_blank"><b>Дхарана</b></a> — целенаправленная концентрация ума</li>
+			  <li><a class="positive" href="https://ru.wikipedia.org/wiki/Дхьяна" target="_blank"><b>Дхьяна</b></a> — медитация (внутренняя деятельность, ведущая к самадхи)</li>
+			  <li><a class="positive" href="https://ru.wikipedia.org/wiki/Самадхи" target="_blank"><b>Самадхи</b></a> — мирное, сверхсознательное состояние блаженного постижения собственной истинной природы</li>
+			</ol>
+          </li>
+        </ul>		  
+      </div>
+    </td>
+</tr>
+
+<!-- Dinacharya -->
+<tr>
+  <td class="light-background">
+    <details>
+      <summary><b>«Диначарья» — Здоровье и ежедневный ритм</b></summary>
+      <div style="padding: 5px 0;">
+        <!-- Sektion 1: Morgenreinigungen -->
+        <p style="margin-top: 10px; margin-bottom: 5px;"><b>Утренний алгоритм (очищение и настройка):</b></p>
+        <ul style="line-height: 1.5; margin-bottom: 15px;">
+          <li><b>Подъем в брахма-мухурту</b> — за 1,5 часа до восхода солнца, время высочайшей чистоты (саттвы) для медитации.</li>
+          <li><b>Очищение чувств</b> — умывание, очищение языка от токсинов (амы), промывание носа (нети).</li>
+          <li><b>Абхьянга</b> — самомассаж с теплым маслом для успокоения нервной системы (вата-доша).</li>
+        </ul>
+
+        <!-- Sektion 2: Ernährung und Energie -->
+        <p style="margin-bottom: 5px;"><b>Аюрведический подход к питанию:</b></p>
+        <ul style="line-height: 1.5; margin-bottom: 15px;">
+          <li>Прием пищи в соответствии с силой пищеварительного огня (агни).</li>
+          <li>Обед как основной прием пищи (во время пика солнечной активности).</li>
+          <li>Управление питанием через призму трех качеств природы: саттвы (чистоты), раджаса (страсти), тамаса (невежества/инерции).</li>
+        </ul>
+
+        <!-- Sektion 3: Körperliche und mentale Disziplin -->
+        <p style="margin-bottom: 5px;"><b>Инструменты поддержания баланса:</b></p>
+        <ul style="line-height: 1.5; margin-bottom: 10px;">
+          <li><a class="positive" href="https://ru.wikipedia.org/wiki/Тапас" target="_blank"><b>Тапас</b></a> — умеренная физическая нагрузка (йога-асаны) и аскезы, укрепляющие тело.</li>
+          <li><b>Тайм-менеджмент</b> — распределение социальной и умственной активности по естественным биоритмам дня.</li>
+          <li><b>Санкальпа</b> — утренняя фиксация чистого намерения на текущий день.</li>
+        </ul>
+      </div>
+    </details>
+  </td>
+</tr>
+
+
+</table>
+
+</details>	
+
+<details>
+         <summary><strong>ВЕДЫ-Ментор</strong></summary>	   
+
+        <details open>
+			<summary><strong>Ведические советы</strong></summary>
+			<ul>
+               <li>Подъем до восхода солнца</li>				
+               <li>Стакан воды</li>
+               <li>Очищение языка</li>
+               <li>Медитация</li>
+			   <li>Аюрведический завтрак</li>
+               <li>Карма</li>
+			   <li>Аюрведический обед</li>				
+			</ul>
+		</details>
+	
+        <details open>
+			<summary><strong>Здоровье и велнес</strong></summary>
+			<ul>
+               <li>Питание и меню: 
+				   Составление сбалансированного меню на неделю с учетом индивидуальных предпочтений в еде, расчет макронутриентов (
