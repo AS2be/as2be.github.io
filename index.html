@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwei Frames Layout</title>
+    <style>
+        /* Entfernt Standard-Ränder der Seite */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Verhindert doppelten Scrollbalken auf der Hauptseite */
+        }
 
+        /* Erstellt ein zweispaltiges Raster für das gesamte Fenster */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Zwei gleich große Spalten (50% / 50%) */
+            height: 100vh; /* 100% der Bildschirmhöhe */
+            width: 100vw;  /* 100% der Bildschirmbreite */
+        }
+
+        /* Styling für die iFrames */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Entfernt den Rahmen um die Frames */
+        }
+
+        /* Optional: Optische Trennlinie zwischen den Spalten */
+        .frame-left {
+            border-right: 2px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Linke Spalte -->
+        <iframe class="frame-left" src="ai-ru.html" title="Linker Frame"></iframe>
+        
+        <!-- Rechte Spalte -->
+        <iframe class="frame-right" src="ai-de.html" title="Rechter Frame"></iframe>
+    </div>
+
+</body>
+</html>
